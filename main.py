@@ -25,7 +25,7 @@ collection = db.posts #pojmenování kolekce (collection)
 def main():
     from colorama import Fore, Style
     #název projektu
-    tprint("MongoApp")
+    tprint("Python-Mongo")
 
     #zjištění akce
     print("1) Ukázat data v databázi\n2) Uložit data do databáze\n3) Smazat určitá data z databáze\n4) Smazat všechna data z databáze\n\n----------------------------------\n\n5) Smazat historii\n6) Exit\n\n")
