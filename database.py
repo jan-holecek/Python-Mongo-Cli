@@ -9,13 +9,13 @@ from deleteAllData import *
 #přihlašovací údaje k databázi
 name = "jméno"
 password = "heslo"
-dbname = "název databáze"
+dbName = "název databáze"
 
 #připojení k MongoDB
-URI = f"mongodb+srv://{name}:{password}@{dbname}.izgvs.mongodb.net/?retryWrites=true&w=majority"
+URI = f"mongodb+srv://{name}:{password}@{dbName}.izgvs.mongodb.net/?retryWrites=true&w=majority"
 mongoClient = pymongo.MongoClient(URI)
-db = mongoClient.test
-collection = db.posts
+db = mongoClient.test #pojmenování poddatabáze
+collection = db.posts #pojmenování kolekce (collection)
 
 def main():
     from colorama import Fore, Style
