@@ -1,4 +1,4 @@
-import database
+import main
 
 def saveData():
     from colorama import Fore, Style
@@ -23,6 +23,6 @@ def saveData():
         }
 
         #uložení příspěvku do databáze
-        savePost = database.collection.insert_one(post)
+        savePost = main.collection.insert_one(post)
 
         print(f'{Fore.GREEN}ÚSPĚCH {Style.RESET_ALL}| Příspěvěk byl poslán do databáze! (id: {savePost.inserted_id})\n')

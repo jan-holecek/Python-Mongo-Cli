@@ -1,4 +1,4 @@
-import database
+import main
 
 def deleteData():
     from colorama import Fore, Style
@@ -15,6 +15,6 @@ def deleteData():
         print(f"\n{error} | Hodnota ID nemůže být prázdná!\n")
     else:
         #smazání příspěvku z databáze
-        deletePost = database.collection.delete_one({'_id': ObjectId(id)})
+        deletePost = main.collection.delete_one({'_id': ObjectId(id)})
 
         print(f'{Fore.GREEN}ÚSPĚCH {Style.RESET_ALL}| Příspěvěk byl smazán z databáze! (id: {id})\n')

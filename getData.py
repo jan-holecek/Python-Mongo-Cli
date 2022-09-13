@@ -1,10 +1,10 @@
-import database
+import main
 
 def getData():
    from colorama import Fore, Style
 
    #vyhledání všech dat z databáze
-   items = database.collection.find()
+   items = main.collection.find()
 
    #vypsání všech dat z databáze
    for item in items:
