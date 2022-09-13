@@ -5,11 +5,16 @@ from getData import *
 from saveData import *
 from deleteData import *
 from deleteAllData import *
+import json
+
+#načtení údajů k databázi z settings.json souboru
+settings = open("settings.json")
+settingsData = json.load(settings)
 
 #přihlašovací údaje k databázi
-name = "jméno"
-password = "heslo"
-dbName = "název databáze"
+name = settingsData["name"]
+password = settingsData["password"]
+dbName = settingsData["dbName"]
 
 #připojení k MongoDB
 URI = f"mongodb+srv://{name}:{password}@{dbName}.izgvs.mongodb.net/?retryWrites=true&w=majority"
