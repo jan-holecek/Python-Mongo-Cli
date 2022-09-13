@@ -35,4 +35,4 @@ python main.py
 ```
 ## Authors
 
-- [@jan-holecek](https://www.github.comjan-holecek)
+- [@jan-holecek](https://www.github.com/jan-holecek)
