@@ -7,9 +7,9 @@ from deleteData import *
 from deleteAllData import *
 
 #přihlašovací údaje k databázi
-name = "admin"
-password = "EmBF0uaVcUDEOwVb"
-dbname = "testdb"
+name = "jméno"
+password = "heslo"
+dbname = "název databáze"
 
 #připojení k MongoDB
 URI = f"mongodb+srv://{name}:{password}@{dbname}.izgvs.mongodb.net/?retryWrites=true&w=majority"
