@@ -1,4 +1,5 @@
 <h1>TODO</h1>
 <ul>
-<li>Upravit nefunkční exit</li>
+<li>Opravit nefunkční exit</li>
+<li>Opravit ERROR zprávy</li>
 </ul>
