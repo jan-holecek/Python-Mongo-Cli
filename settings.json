@@ -1,5 +1,5 @@
 {
-    "name": "admin",
-    "password": "EmBF0uaVcUDEOwVb",
-    "dbName": "testdb"
+    "name": "jméno",
+    "password": "heslo",
+    "dbName": "název databáze"
 }
