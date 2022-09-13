@@ -1,7 +1,6 @@
 <h1 align="center">MongoApp</h1>
 
 <div align="center">
-<br>
 A simple Mongo App in the terminal to manage the database
 <br><br>
 
