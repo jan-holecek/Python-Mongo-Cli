@@ -1,5 +1,13 @@
-# MongoApp
+<h1 align="center">MongoApp</h1>
+
+<div align="center">
+<br>
 A simple Mongo App in the terminal to manage the database
+<br><br>
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+</div>
 
 ## Installation
 You will need to have python installed to run
