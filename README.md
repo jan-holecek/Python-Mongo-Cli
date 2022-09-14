@@ -11,6 +11,10 @@ A simple Mongo App in the terminal to manage the database
 ## Installation
 You will need to have python installed to run
 
+Clone respository
+```
+git clone https://github.com/jan-holecek/Python-Mongo.git
+```
 Install all packages.
 ```
 pip install -r requirements.txt
