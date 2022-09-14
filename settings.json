@@ -1,7 +1,7 @@
 {
-    "name": "admin",
-    "password": "EmBF0uaVcUDEOwVb",
-    "dbName": "testdb",
-	"subdatabaseName": "test",
-	"collectionName": "posts"
+	"name": "<name of your database account>",
+	"password": "<password of your database account>",
+	"dbName": "<name of your Mongo database>",
+	"subdatabaseName": "<name of your subdatabase in database>",
+	"collectionName": "<name of your collection in subdatabase>"
 }
