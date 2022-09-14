@@ -25,7 +25,7 @@ pip install -r requirements.txt
 {
 	"name": "<name of your database account>",
 	"password": "<password of your database account>",
-	"dbName": "<name of your Mongo database>",
+	"dbName": "<name of your Mongo database>"
 }
 ```
 #### You will need to modify the database name (subdatabase) and collection name in `main.py` file.
