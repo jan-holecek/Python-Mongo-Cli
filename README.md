@@ -13,7 +13,7 @@ You will need to have python installed to run
 
 #### Clone respository
 ```
-git clone https://github.com/jan-holecek/Python-Mongo.git
+git clone https://github.com/jan-holecek/Python-Mongo-Cli.git
 ```
 #### Install all packages.
 ```
