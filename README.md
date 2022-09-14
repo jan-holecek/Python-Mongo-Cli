@@ -1,7 +1,7 @@
 <h1 align="center">Python-Mongo-Cli</h1>
 
 <div align="center">
-A simple Mongo App in the terminal to manage the database
+A simple Mongo App in the terminal to manage the database.
 <br><br>
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
@@ -9,7 +9,7 @@ A simple Mongo App in the terminal to manage the database
 </div>
 
 ## Installation
-You will need to have python installed to run
+You will need to have Python installed to run
 
 #### Clone respository
 ```
@@ -25,13 +25,10 @@ pip install -r requirements.txt
 {
 	"name": "<name of your database account>",
 	"password": "<password of your database account>",
-	"dbName": "<name of your Mongo database>"
+	"dbName": "<name of your Mongo database>",
+	"subdatabaseName": "<name of your subdatabase in database>",
+	"collectionName": "<name of your collection in subdatabase>"
 }
-```
-#### You will need to modify the database name (subdatabase) and collection name in `main.py` file.
-```py
-db = mongoClient.test #Edit the .test name according to the name of the database (subdatabase).
-collection = db.posts #Edit the .posts name to match the collection name in the database.
 ```
 #### Run the project.
 ```
