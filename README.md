@@ -11,15 +11,15 @@ A simple Mongo App in the terminal to manage the database
 ## Installation
 You will need to have python installed to run
 
-##### Clone respository
+#### Clone respository
 ```
 git clone https://github.com/jan-holecek/Python-Mongo.git
 ```
-##### Install all packages.
+#### Install all packages.
 ```
 pip install -r requirements.txt
 ```
-##### Now you will need to configure the `settings.json` file.
+#### Now you will need to configure the `settings.json` file.
 (You can find your database account under Security as Database Access)
 ```json
 {
@@ -28,12 +28,12 @@ pip install -r requirements.txt
 	"dbName": "<name of your Mongo database>",
 }
 ```
-##### You will need to modify the database name (subdatabase) and collection name in `main.py` file.
+#### You will need to modify the database name (subdatabase) and collection name in `main.py` file.
 ```py
 db = mongoClient.test #Edit the .test name according to the name of the database (subdatabase).
 collection = db.posts #Edit the .posts name to match the collection name in the database.
 ```
-##### Run the project.
+#### Run the project.
 ```
 python main.py
 ```
