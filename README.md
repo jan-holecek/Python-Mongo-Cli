@@ -1,4 +1,4 @@
-<h1 align="center">Python-Mongo</h1>
+<h1 align="center">Python-Mongo-Cli</h1>
 
 <div align="center">
 A simple Mongo App in the terminal to manage the database
