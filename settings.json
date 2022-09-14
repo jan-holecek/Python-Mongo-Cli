@@ -1,5 +1,5 @@
 {
 	"name": "<name of your database account>",
 	"password": "<password of your database account>",
-	"dbName": "<name of your Mongo database>",
+	"dbName": "<name of your Mongo database>"
 }
