@@ -1,4 +1,3 @@
-from venv import create
 import main
 import datetime
 
