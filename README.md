@@ -1,7 +1,7 @@
 <h1 align="center">Python-Mongo-Cli</h1>
 
 <div align="center">
-A simple Mongo App in the terminal to manage the database.
+A simple terminal application for managing a Mongo database.
 <br><br>
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
