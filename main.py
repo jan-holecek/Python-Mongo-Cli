@@ -26,8 +26,6 @@ collection = db[collectionName] #pojmenování kolekce (collection)
 
 def main():
     from colorama import Fore, Style
-    #název projektu
-    tprint("Python-Mongo-Cli")
 
     #list se seznamem funkcí 
     functionList = [
@@ -41,19 +39,24 @@ def main():
 
     #funkce na vypsání listu funkcí
     def printFunctionList():
+        #název projektu
+        tprint("Python-Mongo-Cli")
+
         for function in functionList:
             index = functionList.index(function) + 1
             if index == 5:
                 print("\n----------------------------------\n")
 
+            #vypíše jednotlivé funkce
             print(str(index) + ") " + function)
     #spuštění funkce printFunctionList
     printFunctionList()
 
-    #barvy
+    #styly textu
     underline = "\033[4m"
     bold = "\033[1m"
     reset = f"{Style.RESET_ALL}"
+    error = f"{Fore.RED}ERROR\033[m{Style.RESET_ALL}"
 
     while True:
         #číslo potřebné pro určení funkce
@@ -71,14 +74,18 @@ def main():
             deleteData()
         elif number == "4":
             print(f"\n\n\n{bold}{underline}SMAZÁNÍ VŠECH DAT Z DATABÁZE (4):{reset}\n")
-            deleteAllData()
-        elif number == "5" or number == "clear" or number == "cls":
+            yesNo = str(input("Opravdu chcete smazat všechna data z databáze? (Ano/Ne) ")).lower()
+            if yesNo == "ano" or yesNo == "yes" or yesNo == "y":
+                deleteAllData()
+            else:
+                print(f"\n{error} | Vymazání všech dat z databáze bylo zrušeno!\n")
+        elif number == "5" or number == "clear" or number == "cls" or number == "smazat" or number == "vyčistit":
             print("\033c", end='')
-            tprint("Python-Mongo-Cli")
             printFunctionList()
 
         #ukončení chodu aplikace v terminálu
-        if number == "6" or number == "konec" or number == "exit":
+        if number == "6" or number == "konec" or number == "exit" or number == "leave" or number == "odejít":
+            os.system("cls")
             os._exit(0)
 
 if __name__ == "__main__":

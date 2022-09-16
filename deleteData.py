@@ -36,6 +36,3 @@ def deleteData():
                         print(f'{Fore.GREEN}ÚSPĚCH {Style.RESET_ALL}| Příspěvěk byl smazán z databáze! (id: {id})\n')
                 else:
                     print(f"\n{error} | Zadali jste špatné ID!\n")
-
-    
-

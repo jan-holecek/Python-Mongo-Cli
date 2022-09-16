@@ -1,4 +1,6 @@
+from venv import create
 import main
+import datetime
 
 def saveData():
     from colorama import Fore, Style
@@ -11,6 +13,9 @@ def saveData():
     content = str(input("Napiš text příspěvku: "))
     author = str(input("Napiš autora příspěvku: "))
 
+    current_time = datetime.datetime.now()
+    createdAt = f"{current_time.day}.{current_time.month}. {current_time.year}"
+
     #zjištění jestli není žádná hodnota neznámá 
     if name == "" or content == "" or author == "":
         print(f"\n{error} | Žádná hodnota nemůže být prázdná!\n")
@@ -19,7 +24,8 @@ def saveData():
         post = {
             "name": author,
             "title": name,
-            "content": content
+            "content": content,
+            "createdAt": createdAt
         }
 
         #uložení příspěvku do databáze
