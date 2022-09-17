@@ -1,3 +1,4 @@
+from email.mime import image
 import main
 import datetime
 
@@ -11,6 +12,7 @@ def saveData():
     name = str(input("Napiš název příspěvku: "))
     content = str(input("Napiš text příspěvku: "))
     author = str(input("Napiš autora příspěvku: "))
+    imageUrl = str(input("Napiše URL náhledového obrázku: "))
 
     current_time = datetime.datetime.now()
     createdAt = f"{current_time.day}.{current_time.month}. {current_time.year}"
@@ -24,6 +26,7 @@ def saveData():
             "name": author,
             "title": name,
             "content": content,
+            "imageUrl": imageUrl,
             "createdAt": createdAt
         }
 

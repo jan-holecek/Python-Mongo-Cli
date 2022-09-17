@@ -16,4 +16,4 @@ def getData():
    else:
       #vypsání všech dat z databáze
       for item in items:
-         print(f'\n---------------------------------\n{Fore.GREEN}ID:{Style.RESET_ALL} {item["_id"]}\n - {Fore.GREEN}Nadpis:{Style.RESET_ALL} {item["title"]}\n - {Fore.GREEN}Text:{Style.RESET_ALL} {item["content"]}\n - {Fore.GREEN}Autor:{Style.RESET_ALL} {item["name"]}\n - {Fore.GREEN}Vytvořeno:{Style.RESET_ALL} {item["createdAt"]}\n---------------------------------\n')
+         print(f'\n---------------------------------\n{Fore.GREEN}ID:{Style.RESET_ALL} {item["_id"]}\n - {Fore.GREEN}Nadpis:{Style.RESET_ALL} {item["title"]}\n - {Fore.GREEN}Text:{Style.RESET_ALL} {item["content"]}\n - {Fore.GREEN}Autor:{Style.RESET_ALL} {item["name"]}\n - {Fore.GREEN}URL obrázku:{Style.RESET_ALL} {item["imageUrl"]}\n - {Fore.GREEN}Vytvořeno:{Style.RESET_ALL} {item["createdAt"]}\n---------------------------------\n')
