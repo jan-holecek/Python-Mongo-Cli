@@ -45,7 +45,7 @@ def main():
         for function in functionList:
             index = functionList.index(function) + 1
             if index == 5:
-                print("\n----------------------------------\n")
+                print("\n" + "-"*34 + "\n")
 
             #vypíše jednotlivé funkce
             print(str(index) + ") " + function)

@@ -2,7 +2,7 @@ import main
 
 def deleteData():
     from colorama import Fore, Style
-    from bson.objectid import ObjectId
+    from bson import ObjectId
 
     #eror zpráva
     error = f"{Fore.RED}ERROR\033[m{Style.RESET_ALL}"
@@ -15,6 +15,10 @@ def deleteData():
     #list pro všechny ID příspěvků v databázi
     idList = []
 
+    #přidání všech ID do listu
+    for item in items:
+        idList.append(item["_id"])
+
     #zjištění jestli se v kolekci nachází nějaké příspěvky
     if str(itemsCount) == "0": 
         print(f"\n{error} | V dané kolekci se nenachází žádné příspevky!\n")
@@ -22,17 +26,13 @@ def deleteData():
         #získání hodnot od uživatele
         id = str(input("Zadej ID příspěvku: "))
 
-        for item in items:
-            idList.append(item["_id"]) #přidání všech ID do listu
+        if ObjectId(id) in idList: #zjištění jestli je zadaná ID v listu příspěvků
+            if id == "": #pokud je ID hodnota prázdná pošle error zprávu
+                print(f"\n{error} | Hodnota ID nemůže být prázdná!\n")
+            else:
+                #smazání příspěvku z databáze
+                deletePost = main.collection.delete_one({'_id': ObjectId(id)})
 
-            for oneId in idList:
-                if id == oneId: #zjištění jestli je zadaná ID v listu příspěvků
-                    if id == "": #pokud je ID hodnota prázdná pošle error zprávu
-                        print(f"\n{error} | Hodnota ID nemůže být prázdná!\n")
-                    else:
-                        #smazání příspěvku z databáze
-                        deletePost = main.collection.delete_one({'_id': ObjectId(id)})
-
-                        print(f'{Fore.GREEN}ÚSPĚCH {Style.RESET_ALL}| Příspěvěk byl smazán z databáze! (id: {id})\n')
-                else:
-                    print(f"\n{error} | Zadali jste špatné ID!\n")
+                print(f'{Fore.GREEN}ÚSPĚCH {Style.RESET_ALL}| Příspěvěk byl smazán z databáze! (id: {id})\n')
+        else:
+            print(f"\n{error} | Zadali jste špatné ID!\n")
