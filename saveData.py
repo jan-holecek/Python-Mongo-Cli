@@ -1,5 +1,3 @@
-from email.mime import image
-from pydoc import describe
 import main
 import datetime
 
