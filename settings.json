@@ -1,7 +1,7 @@
 {
-    "name": "admin",
-    "password": "EmBF0uaVcUDEOwVb",
-    "dbName": "testdb",
-	"subdatabaseName": "test",
-	"collectionName": "posts"
+    "name": "",
+    "password": "",
+    "dbName": "",
+	"subdatabaseName": "",
+	"collectionName": ""
 }
